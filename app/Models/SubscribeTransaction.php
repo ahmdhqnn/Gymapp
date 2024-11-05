@@ -34,7 +34,7 @@ class SubscribeTransaction extends Model
     {
         return $this->belongsTo(SubscribePackage::class, 'subscribe_package_id');
     }
-    public function generateUniqueTrxId()
+    public static function generateUniqueTrxId()
     {
         $prefix = 'FITGYM';
         do {
