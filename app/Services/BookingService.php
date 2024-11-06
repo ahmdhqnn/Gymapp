@@ -21,7 +21,7 @@ class BookingService
         $this->subscribePackageRepository = $subscribePackageRepository;
         $this->bookingRepository = $bookingRepository;
     }
-    public function getBookingRepository(array $validated)
+    public function getBookingDetails(array $validated)
     {
         return $this->bookingRepository->findByTrxIdAndPhoneNumber($validated['booking_trx_id'],
         $validated('phone'));
