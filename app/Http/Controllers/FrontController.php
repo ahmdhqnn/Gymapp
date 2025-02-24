@@ -34,7 +34,7 @@ class FrontController extends Controller
     }
     public function city(City $city)
     {
-        dd($city);
+        // dd($city);
         return view('front.city', compact('city'));
     }
 }
