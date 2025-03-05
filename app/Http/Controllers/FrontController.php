@@ -29,8 +29,8 @@ class FrontController extends Controller
     }
     public function details(Gym $gym)
     {
-        dd($gym);
-        // return view('front.details', compact('gym'));
+        // dd($gym);
+        return view('front.details', compact('gym'));
     }
     public function city(City $city)
     {
