@@ -113,7 +113,7 @@
                         <div class="grid grid-cols-3 justify-between gap-3">
                             @forelse ($itemNewGym->GymFacilities->take(3) as $itemFacility)
                                 <div class="flex flex-col gap-3 items-center text-center">
-                                    <img src="{{ asset('assets/images/icons/Sauna.svg') }}" class="w-10 h-10"
+                                    <img src="{{Storage::url($itemFacility->facility->thumbnail)}}" class="w-10 h-10"
                                         alt="icon">
                                     <div class="flex flex-col gap-1">
                                         <p class="font-semibold text-sm leading-16 tracking-05">
